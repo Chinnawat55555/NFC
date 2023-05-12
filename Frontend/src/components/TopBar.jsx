@@ -5,8 +5,8 @@ const TopBar = () => {
     <Navbar>
         <Navbar.Brand href="#">LOGO</Navbar.Brand>
         <Nav>
-        <Nav.Item title="/homePage">Home</Nav.Item>
-        <Nav.Item>Products</Nav.Item>
+        <Nav.Item href="/homePage" title="HomePage">Home</Nav.Item>
+        <Nav.Item href="/productPage">Products</Nav.Item>
         <Nav.Menu title="About">
             <Nav.Item>Company</Nav.Item>
             <Nav.Item>Team</Nav.Item>
@@ -17,7 +17,7 @@ const TopBar = () => {
         </Nav.Menu>
         </Nav>
         <Nav pullRight>
-        <Nav.Item title="loginPage">Log In</Nav.Item>
+        <Nav.Item href="/logInPage" title="loginPage">Log In</Nav.Item>
         <Nav.Item>Sign Up</Nav.Item>
         </Nav>
     </Navbar>

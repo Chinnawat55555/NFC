@@ -1,5 +1,6 @@
-import { Container, Content, Form, ButtonToolbar, Button, Panel, FlexboxGrid} from 'rsuite';
+import { Content, Form, ButtonToolbar, Button, Panel, FlexboxGrid} from 'rsuite';
 import { useForm } from 'react-hook-form';
+import TopBar from '../components/TopBar';
 
 
 const LoginPage = () => {
@@ -8,7 +9,8 @@ const LoginPage = () => {
 
     return(
     <div className="show-fake-browser login-page" >
-      <Container>
+      <TopBar />
+      <div className='mt-20'>
         <Content >
           <FlexboxGrid justify="center">
             <FlexboxGrid.Item colspan={8}>
@@ -33,7 +35,7 @@ const LoginPage = () => {
             </FlexboxGrid.Item>
           </FlexboxGrid>
         </Content>
-      </Container>
+        </div>
   </div>
     );
 };

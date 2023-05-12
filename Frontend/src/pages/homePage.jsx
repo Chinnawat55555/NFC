@@ -1,14 +1,14 @@
 import { useRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import TopBar from '../components/TopBar';
-import { Button, Container } from 'rsuite';
+import { Button } from 'rsuite';
 
 const HomePage = () => {
     const ref = useRef()
     const styleBackground = {width:"100%", height:"100%", flex: true};
     
   return (    
-    <Container style={{ width: '100%', height: '100%', background: '#253237' }}>
+    <div style={{ width: '100%', height: '100%', background: '#253237' }}>
         <TopBar />
         <Parallax pages={3} ref={ref}>
             <ParallaxLayer offset={0} speed={0}>
@@ -35,7 +35,7 @@ const HomePage = () => {
                 <Button>Menu</Button>
             </ParallaxLayer>
         </Parallax>
-    </Container>
+    </div>
   );
 };
 
